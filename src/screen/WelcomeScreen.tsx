@@ -44,7 +44,6 @@
 
     const styles = StyleSheet.create({
         outer: {
-            // marginHorizontal:RPW(5),
             height: "100%",
             backgroundColor: colors.background,
         },
@@ -82,7 +81,7 @@
         SoppeeText: {
             alignSelf: "center",
             color: colors.Black,
-            fontSize: RPW(12),
+            fontSize: RPW(14),
             marginTop: RPW(3),
             // fontWeight:"800",
             fontFamily:"Raleway-Bold"

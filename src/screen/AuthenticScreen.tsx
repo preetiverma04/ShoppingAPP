@@ -46,15 +46,12 @@ const styles = StyleSheet.create({
     AuthenticText: {
         color: colors.background,
         fontSize: RPW(10),
-        // fontWeight: "700",
         textAlign: "center",
         fontFamily:"Montserrat-Bold",
         fontWeight:"700"
     },
     AuthenticContainer: {
         marginTop: "120%",
-        // backgroundColor:"red",
-        // alignContent:"center",
         alignItems: "center"
     },
     button: {

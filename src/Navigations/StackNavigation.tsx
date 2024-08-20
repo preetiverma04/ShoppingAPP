@@ -4,6 +4,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import AuthenticScreen from '../screen/AuthenticScreen';
 import WelcomeScreen from '../screen/WelcomeScreen';
 import SignInScreen from '../screen/SignInScreen';
+import CreateAccountScreen from '../screen/CreateAccountScreen';
+import ForgotPassword from '../screen/ForgotPassword';
+import HomeScreen from '../screen/HomeScreenComponents/HomeScreen';
+import BottomNavigation from './BottomNvaigation';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +17,7 @@ const StackNavigation = () => {
             <Stack.Navigator
                 initialRouteName="WelcomeScreen"
                 screenOptions={{
-                    headerShown: false,  // This will hide the header for all screens
+                    headerShown: false, 
                 }}
             >
                 <Stack.Screen
@@ -31,6 +35,20 @@ const StackNavigation = () => {
                     component={SignInScreen}
                     options={{ headerShown: false }}
                 />
+                <Stack.Screen
+                    name="CreateAccountScreen"
+                    component={CreateAccountScreen}
+                    options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                    name="ForgotPassword"
+                    component={ForgotPassword}
+                    options={{ headerShown: false }}
+                />
+                <Stack.Screen name="BottomNavigation" component={BottomNavigation}
+                    options={{ headerShown: false }}/>
+
+               
             </Stack.Navigator>
         </NavigationContainer>
     );

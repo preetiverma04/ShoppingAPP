@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { RPH, RPW } from '../utils/ResponsiveScreenSize'
 import { colors } from '../utils/colors'
+import { fonts } from '../utils/fonts'
+import { fontFamily } from '../utils/fontFamily'
 const CustumButton = ({ title, onPress, style, titleStyle }:any)=>{
     return(
         <View>
@@ -19,16 +21,17 @@ const styles=StyleSheet.create({
         alignSelf:"center",
         alignItems: 'center', 
         justifyContent: 'center', 
-       
-        width: "80%", 
+        marginTop: RPH(3),
+        height: RPH(6.8),
+        width: "80%",
         
     },
     ButtonText: {
         color: '#FFF',
-        fontSize: RPW(4),
+        fontSize: fonts.font16,
         textAlign: 'center', 
         textAlignVertical: 'center', 
-        fontFamily: "NunitoSans_10pt_SemiExpanded-Bold",
+        fontFamily: fontFamily.raleway,
     }
 
 })
