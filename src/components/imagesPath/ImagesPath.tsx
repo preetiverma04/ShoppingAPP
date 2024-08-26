@@ -16,7 +16,13 @@ export const ImagesPath={
     CartIcon:require("../../Assets/Images/cart.png"),
     ProfileIcon:require("../../Assets/Images/ProfileIcon.png"),
     Cameraicon: require("../../Assets/Images/Cameraicon.png"),
-    FilterIconhome:require("../../Assets/Images/FilterIconhome.png")
-
-
+    FilterIconhome:require("../../Assets/Images/FilterIconhome.png"),
+    EllipseIcon:require("../../Assets/Images/ellipseIcon.png"),
+    Clock:require("../../Assets/Images/clock.png"),
+    Star:require("../../Assets/Images/star.png"),
+    leftArrow:require("../../Assets/Images/leftArrow.png"),
+    Share:require("../../Assets/Images/share.png"),
+    RatingStar:require("../../Assets/Images/RatingStar.png"),
+    UnfillRatingStar:require("../../Assets/Images/UnfillRatingStar.png"),
+    ProfilePic:require("../../Assets/Images/ProfilePic.png")
 }

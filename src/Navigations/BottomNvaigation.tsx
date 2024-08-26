@@ -1,12 +1,12 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screen/HomeScreenComponents/HomeScreen';
+import HomeScreen from '../screen/Home/HomeScreen';
 import { ImagesPath } from '../components/imagesPath/ImagesPath';
 import { RPH, RPW } from '../utils/ResponsiveScreenSize';
 import { colors } from '../utils/colors';
 import CartScreen from '../screen/CartScreenComponents/CartScreen';
-import FilterScreen from '../screen/FilterScreenComponent/FilterScreen';
+import FilterScreen from '../screen/Filtter/FilterScreen';
 import FavouriteScreen from '../screen/FavouriteScreenComponent/FavouriteScreen';
 import ProfileScreen from '../screen/ProfileScreenComponent/ProfileScreen';
 import { fonts } from '../utils/fonts';
@@ -15,19 +15,18 @@ const BottomNavigation = () => {
     return (
         <BottomTabs.Navigator
             screenOptions={{
-                tabBarShowLabel: false, 
-                tabBarHideOnKeyboard: true, 
+                tabBarShowLabel: false,
+                tabBarHideOnKeyboard: true,
                 tabBarStyle: {
-                    paddingVertical: RPH(1),  
+                    paddingVertical: RPH(1),
                     borderTopWidth: 0,
-                    backgroundColor: colors.background, 
+                    backgroundColor: colors.background,
                     elevation: 0,
                 },
                 tabBarLabelStyle: {
-                    fontSize: fonts.font12,  
+                    fontSize: fonts.font12,
                 },
-            }}
-        >
+            }}>
             <BottomTabs.Screen
                 name="Home"
                 component={HomeScreen}
@@ -118,9 +117,9 @@ const BottomNavigation = () => {
 };
 const styles = StyleSheet.create({
     icon: {
-        width: RPW(5),  
+        width: RPW(5),
         height: RPH(5),
-        resizeMode:"contain" 
+        resizeMode: "contain"
     },
 });
 export default BottomNavigation;
