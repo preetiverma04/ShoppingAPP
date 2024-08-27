@@ -6,13 +6,13 @@ import { fontFamily } from '../../../utils/fontFamily';
 import { RPH, RPW } from '../../../utils/ResponsiveScreenSize';
 import { ImagesPath } from '../../../components/imagesPath/ImagesPath';
 
-const NewItemHeaderHomeScreen = ({StartingTitle,EndTitle}:any) => {
+const NewItemHeaderHomeScreen = ({StartingTitle,EndTitle,style}:any) => {
     return (
         <View>
             <View style={styles.NewItemContainer}>
-                <Text style={styles.NewItemText}>{StartingTitle}</Text>
+                <Text style={[styles.NewItemText,style]}>{StartingTitle}</Text>
                 <View style={styles.seeAllContainer}>
-                    <Text style={styles.SeeAllText}>{EndTitle}</Text>
+                    <Text style={[,style]}>{EndTitle}</Text>
                     <View style={styles.iconContainer}>
                         <Image source={ImagesPath.EllipseIcon} style={styles.EllipseIcon} />
                         <Image source={ImagesPath.arrow} style={styles.arrowIcon} />

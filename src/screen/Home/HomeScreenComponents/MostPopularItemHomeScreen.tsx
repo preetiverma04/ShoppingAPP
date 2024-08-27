@@ -51,8 +51,11 @@ const styles = StyleSheet.create({
     },
     outerWrapper: {
         marginTop: RPW(5),
-        marginRight: RPW(3),
+        // marginRight: RPW(3),
+        paddingRight : RPW(2),
+        paddingLeft : RPW(1),
         width: RPW(40),
+        marginBottom:RPW(2)
     },
     priceLikeContainer: {
         flexDirection: 'row',

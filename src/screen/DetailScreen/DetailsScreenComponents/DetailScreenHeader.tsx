@@ -45,17 +45,13 @@ const DetailScreenHeader = () => {
         </View>
     );
 };
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.background,
-      
-       
     },
     headerContainer: {
-        backgroundColor: colors.background,
-        
+        backgroundColor: colors.background, 
     },
     productImage: {
         width: '100%',

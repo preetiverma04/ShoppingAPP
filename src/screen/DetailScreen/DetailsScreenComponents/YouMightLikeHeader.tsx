@@ -24,12 +24,14 @@ const styles = StyleSheet.create({
         backgroundColor: colors.background, 
     },
     YouMightLikeHeaderText: {
+        marginLeft:RPW(1),
         color: colors.Black,
         fontSize: fonts.font18,
         fontFamily: fontFamily.ralewayBold,
     },
     OuterHeader: {
         marginHorizontal: RPW(5),
+        marginVertical:RPW(1)
         
     }
 });

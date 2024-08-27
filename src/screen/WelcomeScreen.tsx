@@ -20,7 +20,7 @@
                         <Text style={styles.SoppeeText}> Shoppe</Text>
                     </View>
                     <View style={styles.ButtonContainer}>
-                        <CustumButton title="Let's get started" // Example title
+                        <CustumButton title="Let's get started" 
                             onPress={() => navigation.navigate('AuthenticScreen')}
                             style={styles.button} />
                     </View>
